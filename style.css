@@ -1,0 +1,421 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
+
+body {
+font-family: roboto;
+display: flex;
+flex-direction: row;
+background-color: #FAFAFA;
+}
+
+
+
+.top-menu {
+    display: flex;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #DBDBDB;
+    position: fixed;
+    z-index: 4;
+    
+}
+
+
+.top-menu-left {
+    width: 50%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+     }
+
+     @media (max-width: 935px) {
+        .top-menu-left {
+            width: 30%;
+            justify-content: center;
+            
+            }
+    }
+
+
+
+.top-menu-left ion-icon {
+    font-size: 22px;
+    border-right: 1px solid #DBDBDB;
+    margin-left: 215px;
+    
+    }
+
+    
+    
+.top-menu-left img {
+    width: 103px;
+    height: 29px;
+    margin-left: 21px;
+       
+   }
+
+   @media (max-width: 935px) {
+    .top-menu-left img {
+        margin-left: 0px;
+                }
+}
+
+.top-menu-right {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 50%;
+    height: 54px;
+    align-items: center;
+    }
+
+    @media (max-width: 935px) {
+        .top-menu-right {
+            width: 70%;
+     
+                    }
+    }
+.search-bar {
+    width: 40%;
+    height: 28px;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.search-bar p{
+    font-weight: 400px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+    margin: 0 10px;
+}
+
+.content {
+    background-color: #FAFAFA;
+    width: 75vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    @media (max-width: 935px) {
+        .content {
+            width: 100vw;
+                    }
+    }
+.stories-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 614px;
+    height: 85px;
+    background-color: white;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    margin: 100px 0px 24px 0;
+    
+      
+    }
+
+    @media (max-width: 614px) {
+        .stories-bar {
+            background-color: #FAFAFA;
+            border: 0;
+                    }
+                }
+
+.stories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 9.5px;
+    
+}
+
+@media (max-width: 614px){
+    .last-story {
+        display: none;
+    }
+}
+.stories-profile  {
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px;
+    position: relative;
+        }
+
+.front-stories {
+    position: absolute;
+    z-index: 2;
+    width: 55px;
+    height: 55px;
+}
+
+.background-stories {
+    z-index: 1;
+    width: 62px;
+    height: 62px;
+   
+}
+
+
+
+.stories p{
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+color: #262626;
+}
+
+.arrow {
+    z-index: 3;
+    
+    }
+
+.arrow ion-icon{
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: white;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+ 
+ }
+
+ @media (max-width: 614px) {
+    .arrow ion-icon {
+       display: none;
+                }
+            }
+
+ .feed {
+     display: flex;
+     flex-direction: column;
+     
+ }
+
+ .card-post {
+     background-color: #FFFFFF;
+     width: 614px;
+     height: 749px;
+     border: 1px solid #DBDBDB;
+     border-radius: 3px;
+     margin-bottom: 60px;
+ }
+
+ @media (max-width: 614px) {
+    .card-post {
+        width: 100vw;
+      
+                }
+            }
+ 
+ .post {
+     height: 600px;
+     width: 612px;
+     margin: 0
+ }
+
+.top-card {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    height: 61px;
+    position: relative;
+  
+} 
+
+.top-card p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+        
+}
+
+
+.top-card img{
+   height: 32px; 
+   width: 32px;
+   margin: 15px;
+}
+
+.top-card ion-icon{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+
+.bottom-card{
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.bottom-card ion-icon{
+    width: 22px;
+    height: 22px;
+    margin: 10px 0px 10px 15px;   
+}
+
+
+.bookmark {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+        
+}
+
+.likes{
+    display: flex;
+    flex-direction: row;
+}
+
+.likes img{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+
+.sidebar {
+    width: 500px;
+    background-color: #FAFAFA;
+    z-index: 3;
+    position: fixed;
+    left: 57.8vw;
+    top: 0vw;
+    width: 293px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+@media (max-width: 935px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+.highlight {
+    margin: 100px 0px 24px 30px;
+    display: flex;  
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+   
+}  
+
+.highlight-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    color: #262626;
+   
+}
+
+.highlight-text :nth-child(2){
+    color: #8E8E8E;
+}
+
+.suggestions {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0px 24px 30px;
+}
+
+.suggestions-titles {
+    display: flex;
+    
+
+}
+
+.suggestions-titles p {
+font-weight: 500;
+color: #8E8E8E;
+}
+
+.suggestions-titles p :nth-child(1){
+    margin: 0 0 0 100px;
+    color:#262626
+}
+
+.profiles {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+
+.profiles-text {
+    margin: 0 100px 15px 10px;
+ 
+}
+
+.profiles-text p {
+    margin-bottom: 3px;
+}
+
+.seguir {
+    color: #139EF2;
+    font-weight: 500;
+}
+
+.links-uteis{
+    color: #C7C7C7;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    width: 350px;
+    height: 39px;
+    margin-top: 40px;
+      
+}
+
+.instagram {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+strong {
+    font-weight: 500;
+}
